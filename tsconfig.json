@@ -2,6 +2,7 @@
 	"compileOnSave": true,
 	"compilerOptions": {
 		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
 		"declaration": false,
 		"emitDecoratorMetadata": true,
 		"esModuleInterop": true,
@@ -10,15 +11,16 @@
 		"incremental": true,
 		"inlineSourceMap": true,
 		"inlineSources": false,
-		"lib": ["esnext", "esnext.array", "esnext.asynciterable", "esnext.intl", "esnext.symbol"],
+		"lib": ["esnext", "esnext.array", "esnext.asynciterable", "esnext.intl", "esnext.symbol", "DOM"],
 		"module": "commonjs",
 		"moduleResolution": "node",
 		"noEmitOnError": true,
 		"outDir": "dist",
+		"rootDirs": ["src", "scripts", "types"],
 		"resolveJsonModule": true,
-		"rootDir": "src",
 		"skipLibCheck": true,
 		"strict": true,
-		"target": "ESNEXT"
+		"target": "ESNEXT",
+		"typeRoots": ["types"]
 	}
 }
